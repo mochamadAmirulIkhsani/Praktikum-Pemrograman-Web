@@ -1,0 +1,121 @@
+.bold-inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.lighter-inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.hero {
+  background-image: url("assets/images/bg-home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.hero-container {
+  display: flex;
+  padding-top: 12rem;
+}
+
+.hero-container > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container h1 {
+  font-size: 40px;
+  width: 232px;
+  margin: 20px 0;
+}
+
+.hero-container p {
+  font-size: 24px;
+  text-align: left;
+  width: 448px;
+}
+
+.hero-container > img {
+  width: 50%;
+  height: 350px;
+  align-self: center;
+}
+
+.card-section {
+  background-color: #3499CC;
+  min-height: 90vh;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}
+
+.talent {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+}
+
+.talent-container >div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.talent-container h3 {
+  font-size: 40px;
+  width: 232px;
+  margin: 20px 0;
+}
+
+.talent-container p {
+  font-size: 24px;
+  text-align: left;
+  width: 448px;
+}
+
+
+.talent-container > img {
+  width: 50%;
+  height: 350px;
+  align-self: center;
+}
+
+.daftar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer {
+  padding-top: 3rem;
+  background-color: #D9D9D9; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
