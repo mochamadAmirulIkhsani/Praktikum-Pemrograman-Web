@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Penjumlahan</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Penjumlahan</h1>
+        <h3>Bilangan pertama</h3>
+        <input id="angkaPertama" type="number">
+        <h3>Bilangan kedua</h3>
+        <input id="angkaKedua" type="number">
+        <button onclick="sum()">Jumlahkan</button>
+        <button onclick="reset()" id="reset">Reset</button>
+        <h2>Hasil: <span id="hasil"></span></h2>
+    </div>
+
+    <script>
+        function sum() {
+            var angkaPertama = document.getElementById('angkaPertama').value;
+            var angkaKedua = document.getElementById('angkaKedua').value;
+            var hasil = parseInt(angkaPertama) + parseInt(angkaKedua);
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+        function reset() {
+            document.getElementById('angkaPertama').value = "";
+            document.getElementById('angkaKedua').value = "";
+            document.getElementById('hasil').innerHTML = "";
+        }
+    </script>
+
+</body>
+
+</html>

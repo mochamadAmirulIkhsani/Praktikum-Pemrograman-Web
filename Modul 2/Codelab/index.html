@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <!-- ========== Mengakses Elemen DOM ========== -->
+    <!-- getElementById(“content”) -->
+    <p id="myParagraph">Ini adalah paragraf </p>
+    <script>
+        const paragrapfh = document.getElementById("myParagraph");
+        console.log(paragraph.innerText);
+    </script>
+    <!-- getElementsbyClassName(“content”) -->
+    <p class="myClass">Paragraf pertama</p>
+    <p class="myClass">Paragraf kedua</p>
+    <script>
+        const elements = document.getElementsByClassName("myClass");
+        console.log(elements[0].innerText);
+    </script>
+    <!-- querySelector(“content”) -->
+    <div class="container">Ini adalah kontainer</div>
+    <script>
+        const container = document.querySelector(".container");
+        console.log(container.innerText);
+    </script>
+
+    <!-- ========= Mengubah konten Elemen ========== -->
+    <!-- - InnerText(“content”) -->
+    <p id="demo">Teks lama</p>
+    <script>
+        const demo = document.getElementById("demo");
+        demo.innerText = "Teks baru";
+    </script>
+    <!-- textContent(“content”) -->
+    <p id="demo2">Teks lama lagi</p>
+    <script>
+        const demo2 = document.getElementById("demo2");
+        demo2.textContent = "Teks baru lagi";
+    </script>
+    <!-- innerHTML(“content”) -->
+    <div>konten lama</div>
+    <div id="container">Konten baru</div>
+    <script>
+        const container2 = document.getElementById("container");
+        container2.innerHTML = "<strong>Konten baru 1</strong>"
+    </script>
+
+    <!-- ========= Mengubah Atribut Elemen ========== -->
+    <!-- setAttribute(“content”) -->
+    <img id="myImage" src="image1.jpg" alt="gambar 1">
+    <script>
+        const image = document.getElementById("myImage");
+        image.setAttribute("src", "image2.jpg");
+    </script>
+    <!-- getAttribute(“content”) -->
+    <a id="myLink" href="https://example.com">Kunjungi situs</a>
+    <script>
+        const link = document.getElementById("myLink");
+        const hrefValue = link.getAttribute("href");
+        console.log(hrefValue);
+    </script>
+    <!-- removeAttribute(“content”) -->
+    <input id="myInput" type="text" placeholder="Isi teks di sini">
+    <script>
+        const input = document.getElementById("myInput");
+        input.removeAttribute("placeholder");
+    </script>
+
+    <!-- ========= Event Handling ========== -->
+    <!-- addEventListener -->
+     <button id="myButton">Klik Saya</button>
+    <script>
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", function (){
+            alert("Tombol diklik!");
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir | Codelab 2</title>
+</head>
+
+<body>
+
+    <div style="display: flex; justify-content: center; ">
+        <div style="background-color: cornflowerblue; text-align: center; justify-content: center; max-width: fit-content; font-weight: bolder;"
+            id="container">
+            <h1>Form Pendaftaran</h1>
+            <p>Nama</p>
+            <input id='inputNama' type="text">
+            <p>Email</p>
+            <input id='inputEmail' type="text">
+            <p>Alamat Lengkap</p>
+            <input id='inputAlamat' type="text">
+            <br>
+            <button id="myButton" onclick="validation()">Daftar</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        function validation() {
+            var x = document.getElementById('inputNama').value;
+            var y = document.getElementById('inputEmail').value;
+            var z = document.getElementById('inputAlamat').value;
+
+
+            if (x == '') {
+                alert("Semua data belum diisi");
+            } else if (y == '') {
+                alert("Semua data belum diisi");
+            } else if (z == '') {
+                alert("Semua data belum diisi");
+            } else {
+                alert("Data sudah di isi");
+            }
+        }
+
+        document.getElementById('inputAlamat').style.height = "200px";
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Pemrograman Java</h1>
+    <button id="titleButton">Tombol Ubah Judul</button>
+
+    <script>
+        let button = document.getElementById("titleButton");
+
+        button.addEventListener("click", function () {
+            let title = document.getElementById("title");
+
+            title.innerHTML = "Pemrograman Website";
+        });
+    </script>
+</body>
+
+</html>
